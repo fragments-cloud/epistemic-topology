@@ -48,6 +48,9 @@
     "title": "Simulação Interativa",
     "description": "Explore como ideias se propagam no espaço-tempo"
   },
+  "analysis": {
+    "title": "Análise Empírica: Difusão de Conhecimento"
+  },
   "publications": {
     "title": "Publicações",
     "preprint": "📄 Preprint (arXiv)",

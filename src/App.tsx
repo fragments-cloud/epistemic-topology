@@ -1,6 +1,6 @@
 import React from 'react'
 import EpistemicTopologySimulation from './epistemic_topology_sim.tsx'
-import EpistemicDataAnalysis from './epistemic_data_analysis.tsx'
+import EpistemicDataAnalysis from '../components/epistemic_data_analysis.tsx'
 
 function App() {
   return (

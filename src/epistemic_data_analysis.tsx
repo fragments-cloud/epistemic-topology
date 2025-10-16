@@ -220,7 +220,7 @@ const EpistemicDataAnalysis = () => {
   ];
   
   return (
-    <div className="w-full max-w-6xl mx-auto p-6 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 rounded-lg shadow-2xl border border-purple-500/20">
+    <div className="w-full max-w-6xl mx-auto p-6 bg-red-500 rounded-lg shadow-2xl border border-purple-500/20">
       <div className="mb-6">
         <h2 className="text-3xl font-bold text-white mb-2">
           Análise Empírica: Difusão de Conhecimento

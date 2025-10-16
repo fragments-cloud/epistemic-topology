@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import EpistemicTopologySimulation from '../src/epistemic_topology_sim';
-import EpistemicDataAnalysis from '../src/epistemic_data_analysis';
+import EpistemicDataAnalysis from '../components/epistemic_data_analysis';
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
@@ -116,7 +116,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{t('hero.title')} - {t('hero.subtitle')}</title>
+        <title>{String(t('hero.title'))} - {String(t('hero.subtitle'))}</title>
         <meta name="description" content="Framework matemático original para modelar a dinâmica do conhecimento no espaço-tempo" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -125,9 +125,21 @@ export default function Home() {
       <section className="hero">
         <canvas id="particles"></canvas>
         <div className="hero-content">
-          <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
-            <button onClick={() => changeLanguage('pt')} className="btn btn-secondary" style={{ marginRight: '10px' }}>PT</button>
-            <button onClick={() => changeLanguage('en')} className="btn btn-secondary">EN</button>
+          <div style={{ position: 'absolute', top: '20px', right: '20px', zIndex: 10 }}>
+            <button 
+              onClick={() => changeLanguage('pt')} 
+              className={`btn ${router.locale === 'pt' ? 'btn-primary' : 'btn-secondary'}`} 
+              style={{ marginRight: '10px', background: router.locale === 'pt' ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : 'rgba(255, 255, 255, 0.1)', color: 'white', border: '2px solid rgba(102, 126, 234, 0.5)' }}
+            >
+              PT
+            </button>
+            <button 
+              onClick={() => changeLanguage('en')} 
+              className={`btn ${router.locale === 'en' ? 'btn-primary' : 'btn-secondary'}`} 
+              style={{ background: router.locale === 'en' ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : 'rgba(255, 255, 255, 0.1)', color: 'white', border: '2px solid rgba(102, 126, 234, 0.5)' }}
+            >
+              EN
+            </button>
           </div>
           <h1>{t('hero.title')}</h1>
           <div className="subtitle">{t('hero.subtitle')}</div>
@@ -239,9 +251,9 @@ export default function Home() {
 
       {/* Simulação */}
       <section className="section" id="simulacao">
-        <h2 className="section-title">Simulação Interativa</h2>
+        <h2 className="section-title">{t('simulation.title')}</h2>
         <div className="card" style={{ textAlign: 'center' }}>
-          <p style={{ marginBottom: '2rem' }}>Explore como ideias se propagam no espaço-tempo</p>
+          <p style={{ marginBottom: '2rem' }}>{t('simulation.description')}</p>
           <div>
             <EpistemicTopologySimulation />
           </div>
@@ -250,38 +262,38 @@ export default function Home() {
 
       {/* Análise Empírica */}
       <section className="section" id="analise">
-        <h2 className="section-title">Análise Empírica: Difusão de Conhecimento</h2>
+        <h2 className="section-title">{t('analysis.title')}</h2>
         <EpistemicDataAnalysis />
       </section>
 
       {/* Paper */}
       <section className="section" id="paper">
-        <h2 className="section-title">Publicações</h2>
+        <h2 className="section-title">{t('publications.title')}</h2>
         <div className="cards-grid">
           <div className="card">
-            <h3>📄 Preprint (arXiv)</h3>
-            <p>Framework completo com formalização matemática e validação empírica</p>
-            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>Em breve</a>
+            <h3>{t('publications.preprint')}</h3>
+            <p>{t('publications.preprintText')}</p>
+            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('journey.future')}</a>
           </div>
           <div className="card">
-            <h3>💻 Código Aberto</h3>
-            <p>Simulações, datasets e análises disponíveis no GitHub</p>
+            <h3>{t('publications.code')}</h3>
+            <p>{t('publications.codeText')}</p>
             <a href="https://github.com/fragments-cloud/epistemic-topology" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>GitHub</a>
           </div>
           <div className="card">
-            <h3>🎥 Visualizações</h3>
-            <p>Vídeos e materiais educativos sobre o framework</p>
-            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>Em breve</a>
+            <h3>{t('publications.videos')}</h3>
+            <p>{t('publications.videosText')}</p>
+            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('journey.future')}</a>
           </div>
         </div>
       </section>
 
       {/* Contato */}
       <section className="section">
-        <h2 className="section-title">Colaboração</h2>
+        <h2 className="section-title">{t('collaboration.title')}</h2>
         <div className="card" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
-          <p style={{ marginBottom: '2rem' }}>Interessado em colaborar, validar com seus dados, ou aplicar este framework?</p>
-          <a href="mailto:contato@antoniomuller.com" className="btn btn-primary">contato@antoniomuller.com</a>
+          <p style={{ marginBottom: '2rem' }}>{t('collaboration.description')}</p>
+          <a href="mailto:contato@antoniomuller.com" className="btn btn-primary">{t('collaboration.email')}</a>
         </div>
       </section>
 
@@ -292,8 +304,8 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/antoniomuller/" title="LinkedIn">in</a>
           <a href="https://github.com/fragments-cloud/epistemic-topology" title="GitHub">⚡</a>
         </div>
-        <p style={{ color: '#666' }}>© 2024 Antonio Müller. Framework disponível sob licença CC0.</p>
-        <p style={{ color: '#f093fb', marginTop: '1rem', fontStyle: 'italic' }}>"O conhecimento é resistência e o amor é a salvação"</p>
+        <p style={{ color: '#666' }}>{t('footer.copyright')}</p>
+        <p style={{ color: '#f093fb', marginTop: '1rem', fontStyle: 'italic' }}>{t('footer.quote')}</p>
       </footer>
     </>
   );
