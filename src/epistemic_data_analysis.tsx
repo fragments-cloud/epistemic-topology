@@ -1,4 +1,6 @@
 // @ts-nocheck
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { TrendingUp, Database, Brain, AlertCircle } from 'lucide-react';
