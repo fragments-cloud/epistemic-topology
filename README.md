@@ -21,7 +21,7 @@ This repository contains the complete implementation of **Epistemic Topology**, 
 ## 🚀 Quick Start
 
 ### Online Demo
-Visit the [live interactive simulation](https://epistemic-topology.vercel.app) to explore knowledge propagation dynamics.
+Visit the [live interactive simulation](https://antoniomuller.com) to explore knowledge propagation dynamics.
 
 ### Local Development
 
@@ -193,8 +193,9 @@ This allows others to build upon your work while ensuring proper attribution.
 
 **Antonio Müller**
 - 🌐 [Personal Website](https://antoniomuller.com)
-- 📧 antonio.muller@[your-email]
-- 🐦 [@antoniomuller](https://twitter.com/antoniomuller)
+- 📧 [contato@antoniomuller.com](mailto:contato@antoniomuller.com)
+- 🐦 [@AntonioMullerJM](https://x.com/AntonioMullerJM)
+- 💼 [LinkedIn](https://www.linkedin.com/in/antoniomuller/)
 - 📍 Rio de Janeiro, Brazil
 
 ## 🎓 Citation
