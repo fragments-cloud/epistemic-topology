@@ -2,7 +2,7 @@
 
 *A Mathematical Framework for Knowledge Dynamics in Space-Time*
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://img.shields.io/badge/DOI-Coming%20Soon-blue)](https://doi.org/)
 [![arXiv](https://img.shields.io/badge/arXiv-Coming%20Soon-red)](https://arxiv.org/)
 
@@ -172,9 +172,16 @@ npm run build && npm test
 
 ## 📄 License
 
-This work is dedicated to the **public domain** under [Creative Commons CC0 1.0](http://creativecommons.org/publicdomain/zero/1.0/).
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-**Reason:** Knowledge should flow freely (maximize D, minimize barriers).
+**You are free to:**
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+**Under the following terms:**
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made
+
+This allows others to build upon your work while ensuring proper attribution.
 
 ## 🙏 Acknowledgments
 

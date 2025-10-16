@@ -325,8 +325,8 @@ function updateDensity(rho, D, sigma, mu, dt, dx) {
 
 ## Licencia
 
-Este trabajo está dedicado al dominio público bajo Creative Commons CC0 1.0.  
-**Razón:** El conocimiento debe fluir libremente (maximizar D, minimizar barreras).
+Este trabajo está licenciado bajo Creative Commons Attribution 4.0 International (CC BY 4.0).  
+**Razón:** El conocimiento debe fluir libremente, pero con reconocimiento adecuado de la autoría (maximizar D, minimizar barreras innecesarias).
 
 ---
 
