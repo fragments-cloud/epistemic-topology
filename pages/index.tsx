@@ -258,10 +258,9 @@ export default function Home() {
       {/* Footer */}
       <footer>
         <div className="social-links">
-          <a href="#" title="Twitter">𝕏</a>
-          <a href="#" title="LinkedIn">in</a>
-          <a href="#" title="GitHub">⚡</a>
-          <a href="#" title="ResearchGate">RG</a>
+          <a href="https://x.com/AntonioMullerJM" title="Twitter">𝕏</a>
+          <a href="https://www.linkedin.com/in/antoniomuller/" title="LinkedIn">in</a>
+          <a href="https://github.com/fragments-cloud/epistemic-topology" title="GitHub">⚡</a>
         </div>
         <p style={{ color: '#666' }}>© 2024 Antonio Müller. Framework disponível sob licença CC0.</p>
         <p style={{ color: '#f093fb', marginTop: '1rem', fontStyle: 'italic' }}>"O conhecimento é resistência e o amor é a salvação"</p>
