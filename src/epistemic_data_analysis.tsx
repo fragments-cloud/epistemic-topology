@@ -218,12 +218,12 @@ const EpistemicDataAnalysis = () => {
   ];
   
   return (
-    <div className="w-full max-w-6xl mx-auto p-6 bg-gradient-to-br from-slate-900 to-slate-800 rounded-lg shadow-2xl">
+    <div className="w-full max-w-6xl mx-auto p-6 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 rounded-lg shadow-2xl border border-purple-500/20">
       <div className="mb-6">
         <h2 className="text-3xl font-bold text-white mb-2">
           Análise Empírica: Difusão de Conhecimento
         </h2>
-        <p className="text-slate-300">
+        <p className="text-purple-200">
           Validação do modelo com dados reais de propagação de ideias
         </p>
       </div>
@@ -236,8 +236,8 @@ const EpistemicDataAnalysis = () => {
             onClick={() => setSelectedCase(key)}
             className={`p-4 rounded-lg transition ${
               selectedCase === key 
-                ? 'bg-blue-600 text-white shadow-lg' 
-                : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                ? 'bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg border border-purple-400' 
+                : 'bg-purple-900/50 text-purple-200 hover:bg-purple-800/50 border border-purple-600'
             }`}
           >
             <div className="font-semibold text-sm mb-1">{study.name}</div>
@@ -248,19 +248,19 @@ const EpistemicDataAnalysis = () => {
       
       {/* Métricas Principais */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-        <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg p-4 text-white">
+        <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg p-4 text-white border border-blue-400">
           <div className="text-xs opacity-80 mb-1">Correlação</div>
           <div className="text-3xl font-bold">{metrics.correlation}%</div>
           <div className="text-xs mt-1">Pearson r</div>
         </div>
         
-        <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-lg p-4 text-white">
+        <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-lg p-4 text-white border border-green-400">
           <div className="text-xs opacity-80 mb-1">Acurácia</div>
           <div className="text-3xl font-bold">{metrics.predictiveAccuracy}%</div>
           <div className="text-xs mt-1">Erro &lt; 15%</div>
         </div>
         
-        <div className="bg-gradient-to-br from-purple-600 to-purple-700 rounded-lg p-4 text-white">
+        <div className="bg-gradient-to-br from-purple-600 to-purple-700 rounded-lg p-4 text-white border border-purple-400">
           <div className="text-xs opacity-80 mb-1">RMSE</div>
           <div className="text-3xl font-bold">{metrics.rmse}</div>
           <div className="text-xs mt-1">Erro quadrático</div>
