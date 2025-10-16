@@ -223,6 +223,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Análise Empírica */}
+      <section className="section" id="analise">
+        <h2 className="section-title">Análise Empírica: Difusão de Conhecimento</h2>
+        <div className="card">
+          <EpistemicDataAnalysis />
+        </div>
+      </section>
+
       {/* Paper */}
       <section className="section" id="paper">
         <h2 className="section-title">Publicações</h2>
