@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "Antonio Müller",
+    "subtitle": "Epistemic Topology: The Mathematics of Knowledge",
+    "quote": "\"Knowledge is resistance and love is salvation\"",
+    "paper": "Read the Paper",
+    "simulation": "View Simulation"
+  },
+  "discovery": {
+    "title": "The Discovery",
+    "question": "🌍 The Question",
+    "questionText": "In Rio de Janeiro, on October 16, 2024, a simple question arose: \"When I have an idea here and now, where and when does it exist?\"",
+    "math": "🧮 The Mathematics",
+    "mathText": "This philosophical question led to a complete mathematical framework: knowledge as a dynamic field in space-time, governed by differential equations.",
+    "validation": "📊 The Validation",
+    "validationText": "Tested with real data from COVID-19, Deep Learning, Bitcoin and Climate Change. Correlation >80% between predictions and observations."
+  },
+  "framework": {
+    "title": "The Framework",
+    "diffusion": "Diffusion:",
+    "diffusionText": "How knowledge spreads spatially through communication, teaching, sharing.",
+    "creation": "Creation:",
+    "creationText": "Emergence of new knowledge through innovation, discovery, research.",
+    "dissipation": "Dissipation:",
+    "dissipationText": "Loss of knowledge through forgetting, death, degradation of records."
+  },
+  "results": {
+    "title": "Empirical Results",
+    "covid": "COVID-19 Correlation",
+    "deeplearning": "Deep Learning Correlation",
+    "climate": "Climate Change Correlation",
+    "rmse": "Average RMSE"
+  },
+  "journey": {
+    "title": "Journey",
+    "birth": "June 13, 1986",
+    "birthText": "Born in Rio de Janeiro, Brazil",
+    "conception": "October 16, 2024",
+    "conceptionText": "Conception of Epistemic Topology framework in dialogue with AI",
+    "development": "October 2024",
+    "developmentText": "Mathematical development and computational simulation",
+    "validation": "November 2024",
+    "validationText": "Empirical validation with real data",
+    "future": "Coming Soon",
+    "futureText": "Publication on arXiv and scientific journals"
+  },
+  "simulation": {
+    "title": "Interactive Simulation",
+    "description": "Explore how ideas propagate in space-time"
+  },
+  "publications": {
+    "title": "Publications",
+    "preprint": "📄 Preprint (arXiv)",
+    "preprintText": "Complete framework with mathematical formalization and empirical validation",
+    "code": "💻 Open Source",
+    "codeText": "Simulations, datasets and analyses available on GitHub",
+    "videos": "🎥 Visualizations",
+    "videosText": "Videos and educational materials about the framework"
+  },
+  "collaboration": {
+    "title": "Collaboration",
+    "description": "Interested in collaborating, validating with your data, or applying this framework?",
+    "email": "contato@antoniomuller.com"
+  },
+  "footer": {
+    "copyright": "© 2024 Antonio Müller. Framework available under CC0 license.",
+    "quote": "\"Knowledge is resistance and love is salvation\""
+  }
+}

@@ -1,9 +1,25 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import EpistemicTopologySimulation from '../src/epistemic_topology_sim';
 import EpistemicDataAnalysis from '../src/epistemic_data_analysis';
 
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+})
+
 export default function Home() {
+  const { t } = useTranslation('common');
+  const router = useRouter();
+
+  const changeLanguage = (locale: string) => {
+    router.push(router.pathname, router.asPath, { locale });
+  };
+
   useEffect(() => {
     // Canvas de partículas animadas
     const canvas = document.getElementById('particles') as HTMLCanvasElement;
@@ -23,8 +39,10 @@ export default function Home() {
       vx: number;
       vy: number;
       radius: number;
+      canvas: HTMLCanvasElement;
 
-      constructor() {
+      constructor(canvas: HTMLCanvasElement) {
+        this.canvas = canvas;
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.vx = (Math.random() - 0.5) * 0.5;
@@ -36,8 +54,8 @@ export default function Home() {
         this.x += this.vx;
         this.y += this.vy;
 
-        if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        if (this.x < 0 || this.x > this.canvas.width) this.vx *= -1;
+        if (this.y < 0 || this.y > this.canvas.height) this.vy *= -1;
       }
 
       draw() {
@@ -49,7 +67,7 @@ export default function Home() {
     }
 
     for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle());
+      particles.push(new Particle(canvas));
     }
 
     function animate() {
@@ -96,7 +114,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Antonio Müller - Topologia Epistêmica</title>
+        <title>{t('hero.title')} - {t('hero.subtitle')}</title>
         <meta name="description" content="Framework matemático original para modelar a dinâmica do conhecimento no espaço-tempo" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -105,30 +123,35 @@ export default function Home() {
       <section className="hero">
         <canvas id="particles"></canvas>
         <div className="hero-content">
-          <h1>Antonio Müller</h1>
-          <div className="subtitle">Topologia Epistêmica: A Matemática do Conhecimento</div>
+          <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
+            <button onClick={() => changeLanguage('pt')} className="btn btn-secondary" style={{ marginRight: '10px' }}>PT</button>
+            <button onClick={() => changeLanguage('en')} className="btn btn-secondary">EN</button>
+          </div>
+          <h1>{t('hero.title')}</h1>
+          <div className="subtitle">{t('hero.subtitle')}</div>
+          <p className="quote">{t('hero.quote')}</p>
           <div className="cta-buttons">
-            <a href="#paper" className="btn btn-primary">Ler o Paper</a>
-            <a href="#simulacao" className="btn btn-secondary">Ver Simulação</a>
+            <a href="#paper" className="btn btn-primary">{t('hero.paper')}</a>
+            <a href="#simulacao" className="btn btn-secondary">{t('hero.simulation')}</a>
           </div>
         </div>
       </section>
 
       {/* Sobre */}
       <section className="section" id="sobre">
-        <h2 className="section-title">A Descoberta</h2>
+        <h2 className="section-title">{t('discovery.title')}</h2>
         <div className="cards-grid">
           <div className="card">
-            <h3>🌍 A Pergunta</h3>
-            <p>No Rio de Janeiro, em 16 de outubro de 2024, uma pergunta simples surgiu: "Quando tenho uma ideia aqui e agora, onde e quando ela existe?"</p>
+            <h3>{t('discovery.question')}</h3>
+            <p>{t('discovery.questionText')}</p>
           </div>
           <div className="card">
-            <h3>🧮 A Matemática</h3>
-            <p>Essa questão filosófica levou a um framework matemático completo: conhecimento como campo dinâmico no espaço-tempo, governado por equações diferenciais.</p>
+            <h3>{t('discovery.math')}</h3>
+            <p>{t('discovery.mathText')}</p>
           </div>
           <div className="card">
-            <h3>📊 A Validação</h3>
-            <p>Testado com dados reais de COVID-19, Deep Learning, Bitcoin e Mudança Climática. Correlação &gt;80% entre predições e observações.</p>
+            <h3>{t('discovery.validation')}</h3>
+            <p>{t('discovery.validationText')}</p>
           </div>
         </div>
       </section>
