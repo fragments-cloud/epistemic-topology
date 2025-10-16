@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import EpistemicTopologySimulation from '../src/epistemic_topology_sim';
+import EpistemicTopologySimulation from '../components/epistemic_topology_sim';
 import EpistemicDataAnalysis from '../components/epistemic_data_analysis';
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
