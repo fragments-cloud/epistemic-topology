@@ -226,9 +226,7 @@ export default function Home() {
       {/* Análise Empírica */}
       <section className="section" id="analise">
         <h2 className="section-title">Análise Empírica: Difusão de Conhecimento</h2>
-        <div className="card">
-          <EpistemicDataAnalysis />
-        </div>
+        <EpistemicDataAnalysis />
       </section>
 
       {/* Paper */}
