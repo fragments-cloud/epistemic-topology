@@ -107,7 +107,6 @@ export default function Home() {
         <div className="hero-content">
           <h1>Antonio Müller</h1>
           <div className="subtitle">Topologia Epistêmica: A Matemática do Conhecimento</div>
-          <p className="quote">"O conhecimento é resistência e o amor é a salvação"</p>
           <div className="cta-buttons">
             <a href="#paper" className="btn btn-primary">Ler o Paper</a>
             <a href="#simulacao" className="btn btn-secondary">Ver Simulação</a>
@@ -236,12 +235,12 @@ export default function Home() {
           <div className="card">
             <h3>💻 Código Aberto</h3>
             <p>Simulações, datasets e análises disponíveis no GitHub</p>
-            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>GitHub</a>
+            <a href="https://github.com/fragments-cloud/epistemic-topology" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>GitHub</a>
           </div>
           <div className="card">
             <h3>🎥 Visualizações</h3>
             <p>Vídeos e materiais educativos sobre o framework</p>
-            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>YouTube</a>
+            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>Em breve</a>
           </div>
         </div>
       </section>
