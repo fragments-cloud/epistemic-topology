@@ -3,5 +3,5 @@ module.exports = {
     defaultLocale: 'pt',
     locales: ['pt', 'en'],
   },
-  localePath: './public/locales',
+  localePath: '/locales',
 }
