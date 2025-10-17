@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+// useRouter removed: language buttons were removed from the hero
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import EpistemicTopologySimulation from '../components/epistemic_topology_sim';
@@ -14,11 +14,7 @@ export const getStaticProps = async ({ locale }: { locale?: string }) => ({
 
 export default function Home() {
   const { t } = useTranslation('common');
-  const router = useRouter();
-
-  const changeLanguage = (locale: string) => {
-    router.push(router.pathname, router.asPath, { locale });
-  };
+  // language switch handled via server-side routing; buttons removed
 
   useEffect(() => {
     // Canvas de partículas animadas
@@ -123,22 +119,7 @@ export default function Home() {
       <section className="hero">
         <canvas id="particles"></canvas>
         <div className="hero-content">
-          <div style={{ position: 'absolute', top: '10px', right: '20px', zIndex: 10 }}>
-            <button 
-              onClick={() => changeLanguage('pt')} 
-              className={`btn ${router.locale === 'pt' ? 'btn-primary' : 'btn-secondary'}`} 
-              style={{ marginRight: '8px', padding: '6px 12px', fontSize: '14px', background: router.locale === 'pt' ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : 'rgba(255, 255, 255, 0.1)', color: 'white', border: '2px solid rgba(102, 126, 234, 0.5)', borderRadius: '6px' }}
-            >
-              PT
-            </button>
-            <button 
-              onClick={() => changeLanguage('en')} 
-              className={`btn ${router.locale === 'en' ? 'btn-primary' : 'btn-secondary'}`} 
-              style={{ padding: '6px 12px', fontSize: '14px', background: router.locale === 'en' ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : 'rgba(255, 255, 255, 0.1)', color: 'white', border: '2px solid rgba(102, 126, 234, 0.5)', borderRadius: '6px' }}
-            >
-              EN
-            </button>
-          </div>
+          {/* translation buttons removed */}
           <h1>{t('hero.title')}</h1>
           <div className="subtitle">{t('hero.subtitle')}</div>
           <p className="quote">{t('hero.quote')}</p>
