@@ -59,9 +59,10 @@
     "preprintText": "Complete framework with mathematical formalization and empirical validation",
     "code": "💻 Open Source",
     "codeText": "Simulations, datasets and analyses available on GitHub",
-    "videos": "🎥 Visualizations",
-    "videosText": "Videos and educational materials about the framework",
-    "github": "GitHub"
+    "videos": "📜 Academia.edu",
+    "videosText": "Paper available on Academia.edu.",
+    "academia": "Academia.edu",
+  "github": "GitHub"
   },
   "collaboration": {
     "title": "Collaboration",

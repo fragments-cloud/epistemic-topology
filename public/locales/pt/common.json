@@ -59,8 +59,9 @@
     "preprintText": "Framework completo com formalização matemática e validação empírica",
     "code": "💻 Código Aberto",
     "codeText": "Simulações, datasets e análises disponíveis no GitHub",
-    "videos": "🎥 Visualizações",
-    "videosText": "Vídeos e materiais educativos sobre o framework",
+    "videos": "📜 Academia.edu",
+    "videosText": "Paper disponível na plataforma Academia.edu.",
+    "academia": "Academia.edu",
     "github": "GitHub"
   },
   "collaboration": {

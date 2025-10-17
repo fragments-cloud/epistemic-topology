@@ -252,7 +252,7 @@ export default function Home() {
           <div className="card">
             <h3>{t('publications.preprint')}</h3>
             <p>{t('publications.preprintText')}</p>
-            <a href="https://www.academia.edu/144512552/Epistemic_topology" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('journey.future')}</a>
+            <a href="/epistemic_topology.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('publications.preprint')}</a>
           </div>
           <div className="card">
             <h3>{t('publications.code')}</h3>
@@ -262,7 +262,7 @@ export default function Home() {
           <div className="card">
             <h3>{t('publications.videos')}</h3>
             <p>{t('publications.videosText')}</p>
-            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('journey.future')}</a>
+            <a href="https://www.academia.edu/144512552/Epistemic_topology" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('publications.academia')}</a>
           </div>
         </div>
       </section>
