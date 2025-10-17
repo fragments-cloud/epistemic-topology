@@ -55,7 +55,7 @@
   },
   "publications": {
     "title": "Publications",
-    "preprint": "📄 Preprint (arXiv)",
+    "preprint": "📄 Preprint ",
     "preprintText": "Complete framework with mathematical formalization and empirical validation",
     "code": "💻 Open Source",
     "codeText": "Simulations, datasets and analyses available on GitHub",

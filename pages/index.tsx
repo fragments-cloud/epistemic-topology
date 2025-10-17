@@ -252,7 +252,7 @@ export default function Home() {
           <div className="card">
             <h3>{t('publications.preprint')}</h3>
             <p>{t('publications.preprintText')}</p>
-            <a href="#" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('journey.future')}</a>
+            <a href="https://www.academia.edu/144512552/Epistemic_topology" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('journey.future')}</a>
           </div>
           <div className="card">
             <h3>{t('publications.code')}</h3>
