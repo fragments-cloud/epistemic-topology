@@ -4,12 +4,13 @@
     "subtitle": "Epistemic Topology: The Mathematics of Knowledge",
     "quote": "\"Knowledge is resistance and love is salvation\"",
     "paper": "Read the Paper",
-    "simulation": "View Simulation"
+    "simulation": "View Simulation",
+    "description": "Original mathematical framework for modeling the dynamics of knowledge in space-time"
   },
   "discovery": {
     "title": "The Discovery",
     "question": "🌍 The Question",
-    "questionText": "In Rio de Janeiro, on October 16, 2024, a simple question arose: \"When I have an idea here and now, where and when does it exist?\"",
+    "questionText": "In Rio de Janeiro, on October 16, 2025, a simple question arose: \"When I have an idea here and now, where and when does it exist?\"",
     "math": "🧮 The Mathematics",
     "mathText": "This philosophical question led to a complete mathematical framework: knowledge as a dynamic field in space-time, governed by differential equations.",
     "validation": "📊 The Validation",
@@ -17,6 +18,7 @@
   },
   "framework": {
     "title": "The Framework",
+    "equation": "∂ρ/∂t = D·∇²ρ + σ(x,t,s) - μ·ρ",
     "diffusion": "Diffusion:",
     "diffusionText": "How knowledge spreads spatially through communication, teaching, sharing.",
     "creation": "Creation:",
@@ -35,11 +37,11 @@
     "title": "Journey",
     "birth": "June 13, 1986",
     "birthText": "Born in Rio de Janeiro, Brazil",
-    "conception": "October 16, 2024",
+    "conception": "October 16, 2025",
     "conceptionText": "Conception of Epistemic Topology framework in dialogue with AI",
-    "development": "October 2024",
+    "development": "October 2025",
     "developmentText": "Mathematical development and computational simulation",
-    "validation": "November 2024",
+    "validation": "November 2025",
     "validationText": "Empirical validation with real data",
     "future": "Coming Soon",
     "futureText": "Publication on arXiv and scientific journals"
@@ -58,7 +60,8 @@
     "code": "💻 Open Source",
     "codeText": "Simulations, datasets and analyses available on GitHub",
     "videos": "🎥 Visualizations",
-    "videosText": "Videos and educational materials about the framework"
+    "videosText": "Videos and educational materials about the framework",
+    "github": "GitHub"
   },
   "collaboration": {
     "title": "Collaboration",
@@ -66,7 +69,12 @@
     "email": "contato@antoniomuller.com"
   },
   "footer": {
-    "copyright": "© 2024 Antonio Müller. Framework available under CC0 license.",
-    "quote": "\"Knowledge is resistance and love is salvation\""
+    "copyright": "© 2025 Antonio Müller. Framework available under CC0 license.",
+    "quote": "\"Knowledge is resistance and love is salvation\"",
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
   }
 }

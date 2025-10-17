@@ -4,12 +4,13 @@
     "subtitle": "EIO: Topologia Epistêmica: A Matemática do Conhecimento",
     "quote": "\"O conhecimento é resistência e o amor é a salvação\"",
     "paper": "Ler o Paper",
-    "simulation": "Ver Simulação"
+    "simulation": "Ver Simulação",
+    "description": "Framework matemático original para modelar a dinâmica do conhecimento no espaço-tempo"
   },
   "discovery": {
     "title": "A Descoberta",
     "question": "🌍 A Pergunta",
-    "questionText": "No Rio de Janeiro, em 16 de outubro de 2024, uma pergunta simples surgiu: \"Quando tenho uma ideia aqui e agora, onde e quando ela existe?\"",
+    "questionText": "No Rio de Janeiro, em 16 de outubro de 2025, uma pergunta simples surgiu: \"Quando tenho uma ideia aqui e agora, onde e quando ela existe?\"",
     "math": "🧮 A Matemática",
     "mathText": "Essa questão filosófica levou a um framework matemático completo: conhecimento como campo dinâmico no espaço-tempo, governado por equações diferenciais.",
     "validation": "📊 A Validação",
@@ -17,6 +18,7 @@
   },
   "framework": {
     "title": "O Framework",
+    "equation": "∂ρ/∂t = D·∇²ρ + σ(x,t,s) - μ·ρ",
     "diffusion": "Difusão:",
     "diffusionText": "Como conhecimento se espalha espacialmente através de comunicação, ensino, compartilhamento.",
     "creation": "Criação:",
@@ -35,11 +37,11 @@
     "title": "Jornada",
     "birth": "13 de Junho de 1986",
     "birthText": "Nascimento no Rio de Janeiro, Brasil",
-    "conception": "16 de Outubro de 2024",
+    "conception": "16 de Outubro de 2025",
     "conceptionText": "Concepção do framework de Topologia Epistêmica em diálogo com IA",
-    "development": "Outubro de 2024",
+    "development": "Outubro de 2025",
     "developmentText": "Desenvolvimento matemático e simulação computacional",
-    "validation": "Novembro de 2024",
+    "validation": "Novembro de 2025",
     "validationText": "Validação empírica com dados reais",
     "future": "Em Breve",
     "futureText": "Publicação no arXiv e journals científicos"
@@ -58,7 +60,8 @@
     "code": "💻 Código Aberto",
     "codeText": "Simulações, datasets e análises disponíveis no GitHub",
     "videos": "🎥 Visualizações",
-    "videosText": "Vídeos e materiais educativos sobre o framework"
+    "videosText": "Vídeos e materiais educativos sobre o framework",
+    "github": "GitHub"
   },
   "collaboration": {
     "title": "Colaboração",
@@ -66,7 +69,12 @@
     "email": "contato@antoniomuller.com"
   },
   "footer": {
-    "copyright": "© 2024 Antonio Müller. Framework disponível sob licença CC0.",
-    "quote": "\"O conhecimento é resistência e o amor é a salvação\""
+    "copyright": "© 2025 Antonio Müller. Framework disponível sob licença CC0.",
+    "quote": "\"O conhecimento é resistência e o amor é a salvação\"",
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
   }
 }

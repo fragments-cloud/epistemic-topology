@@ -114,8 +114,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{String(t('hero.title'))} - {String(t('hero.subtitle'))}</title>
-        <meta name="description" content="Framework matemático original para modelar a dinâmica do conhecimento no espaço-tempo" />
+        <title>{`${String(t('hero.title'))} - ${String(t('hero.subtitle'))}`}</title>
+        <meta name="description" content={t('hero.description')} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
@@ -170,79 +170,79 @@ export default function Home() {
 
       {/* Framework */}
       <section className="section" id="framework">
-        <h2 className="section-title">O Framework</h2>
+        <h2 className="section-title">{t('framework.title')}</h2>
 
         <div className="equation-box">
-          ∂ρ/∂t = D·∇²ρ + σ(x,t,s) - μ·ρ
+          {t('framework.equation')}
         </div>
 
         <div className="cards-grid">
           <div className="card">
             <h3>D·∇²ρ</h3>
-            <p><strong>Difusão:</strong> Como conhecimento se espalha espacialmente através de comunicação, ensino, compartilhamento.</p>
+            <p><strong>{t('framework.diffusion')}</strong> {t('framework.diffusionText')}</p>
           </div>
           <div className="card">
             <h3>σ(x,t,s)</h3>
-            <p><strong>Criação:</strong> Surgimento de conhecimento novo através de inovação, descoberta, pesquisa.</p>
+            <p><strong>{t('framework.creation')}</strong> {t('framework.creationText')}</p>
           </div>
           <div className="card">
             <h3>μ·ρ</h3>
-            <p><strong>Dissipação:</strong> Perda de conhecimento por esquecimento, morte, degradação de registros.</p>
+            <p><strong>{t('framework.dissipation')}</strong> {t('framework.dissipationText')}</p>
           </div>
         </div>
       </section>
 
       {/* Métricas */}
       <section className="section">
-        <h2 className="section-title">Resultados Empíricos</h2>
+        <h2 className="section-title">{t('results.title')}</h2>
         <div className="metrics">
           <div className="metric">
             <div className="metric-value">87%</div>
-            <div className="metric-label">Correlação COVID-19</div>
+            <div className="metric-label">{t('results.covid')}</div>
           </div>
           <div className="metric">
             <div className="metric-value">82%</div>
-            <div className="metric-label">Correlação Deep Learning</div>
+            <div className="metric-label">{t('results.deeplearning')}</div>
           </div>
           <div className="metric">
             <div className="metric-value">84%</div>
-            <div className="metric-label">Correlação Mudança Climática</div>
+            <div className="metric-label">{t('results.climate')}</div>
           </div>
           <div className="metric">
             <div className="metric-value">8.2</div>
-            <div className="metric-label">RMSE Médio</div>
+            <div className="metric-label">{t('results.rmse')}</div>
           </div>
         </div>
       </section>
 
       {/* Timeline */}
       <section className="section">
-        <h2 className="section-title">Jornada</h2>
+        <h2 className="section-title">{t('journey.title')}</h2>
         <div className="timeline">
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <h3>13 de Junho de 1986</h3>
-            <p>Nascimento no Rio de Janeiro, Brasil</p>
+            <h3>{t('journey.birth')}</h3>
+            <p>{t('journey.birthText')}</p>
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <h3>16 de Outubro de 2024</h3>
-            <p>Concepção do framework de Topologia Epistêmica em diálogo com IA</p>
+            <h3>{t('journey.conception')}</h3>
+            <p>{t('journey.conceptionText')}</p>
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <h3>Outubro de 2024</h3>
-            <p>Desenvolvimento matemático e simulação computacional</p>
+            <h3>{t('journey.development')}</h3>
+            <p>{t('journey.developmentText')}</p>
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <h3>Novembro de 2024</h3>
-            <p>Validação empírica com dados reais</p>
+            <h3>{t('journey.validation')}</h3>
+            <p>{t('journey.validationText')}</p>
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <h3>Em Breve</h3>
-            <p>Publicação no arXiv e journals científicos</p>
+            <h3>{t('journey.future')}</h3>
+            <p>{t('journey.futureText')}</p>
           </div>
         </div>
       </section>
@@ -276,7 +276,7 @@ export default function Home() {
           <div className="card">
             <h3>{t('publications.code')}</h3>
             <p>{t('publications.codeText')}</p>
-            <a href="https://github.com/fragments-cloud/epistemic-topology" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>GitHub</a>
+            <a href="https://github.com/fragments-cloud/epistemic-topology" className="btn btn-secondary" style={{ display: 'inline-block', marginTop: '1rem' }}>{t('publications.github')}</a>
           </div>
           <div className="card">
             <h3>{t('publications.videos')}</h3>
@@ -298,9 +298,9 @@ export default function Home() {
       {/* Footer */}
       <footer>
         <div className="social-links">
-          <a href="https://x.com/AntonioMullerJM" title="Twitter">𝕏</a>
-          <a href="https://www.linkedin.com/in/antoniomuller/" title="LinkedIn">in</a>
-          <a href="https://github.com/fragments-cloud/epistemic-topology" title="GitHub">⚡</a>
+          <a href="https://x.com/AntonioMullerJM" title={t('footer.social.twitter')}>𝕏</a>
+          <a href="https://www.linkedin.com/in/antoniomuller/" title={t('footer.social.linkedin')}>in</a>
+          <a href="https://github.com/fragments-cloud/epistemic-topology" title={t('footer.social.github')}>⚡</a>
         </div>
         <p style={{ color: '#666' }}>{t('footer.copyright')}</p>
         <p style={{ color: '#f093fb', marginTop: '1rem', fontStyle: 'italic' }}>{t('footer.quote')}</p>
