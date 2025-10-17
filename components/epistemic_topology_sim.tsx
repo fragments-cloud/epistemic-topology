@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Info } from 'lucide-react';
 
 const EpistemicTopologySimulation = () => {
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [time, setTime] = useState(0);
   const [params, setParams] = useState({
@@ -15,8 +15,8 @@ const EpistemicTopologySimulation = () => {
   
   // Grid de densidade epistêmica ρ(x,y,t,s)
   // Simplificação: uma única "espécie" de conhecimento
-  const [grid, setGrid] = useState(null);
-  const [stats, setStats] = useState({ total: 0, max: 0, entropy: 0 });
+  const [grid, setGrid] = useState<any[][] | null>(null);
+  const [stats, setStats] = useState({ total: '0', max: '0', entropy: '0' });
   
   // Inicializar grid
   useEffect(() => {
@@ -137,6 +137,7 @@ const EpistemicTopologySimulation = () => {
     
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
     const size = params.gridSize;
     const cellSize = canvas.width / size;
     

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { LineChart, Line, AreaChart, Area, BarChart, Bar, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Upload, TrendingUp, Database, Brain, AlertCircle } from 'lucide-react';
+import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { TrendingUp, Database, Brain, AlertCircle } from 'lucide-react';
 
 const EpistemicDataAnalysis = () => {
   const [activeTab, setActiveTab] = useState('diffusion');
@@ -34,17 +34,17 @@ const EpistemicDataAnalysis = () => {
     }
   };
   
-  const [simulatedData, setSimulatedData] = useState([]);
+  const [simulatedData, setSimulatedData] = useState<any[]>([]);
   const [metrics, setMetrics] = useState({
-    rmse: 0,
-    correlation: 0,
-    predictiveAccuracy: 0,
-    diffusionRate: 0
+    rmse: '0',
+    correlation: '0',
+    predictiveAccuracy: '0',
+    diffusionRate: '0'
   });
   
   // Gerar dados baseados em padrões reais do COVID-19
   function generateCovidData() {
-    const data = [];
+    const data: any[] = [];
     const months = ['Jan/20', 'Fev/20', 'Mar/20', 'Abr/20', 'Mai/20', 'Jun/20', 
                     'Jul/20', 'Ago/20', 'Set/20', 'Out/20', 'Nov/20', 'Dez/20'];
     
@@ -65,7 +65,7 @@ const EpistemicDataAnalysis = () => {
   }
   
   function generateDeepLearningData() {
-    const data = [];
+    const data: any[] = [];
     const years = ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'];
     
     // Crescimento após AlexNet (2012)
@@ -85,7 +85,7 @@ const EpistemicDataAnalysis = () => {
   }
   
   function generateBitcoinData() {
-    const data = [];
+    const data: any[] = [];
     const years = ['2009', '2011', '2013', '2015', '2017', '2019', '2021', '2023'];
     
     // Ciclos de hype
@@ -105,7 +105,7 @@ const EpistemicDataAnalysis = () => {
   }
   
   function generateClimateData() {
-    const data = [];
+    const data: any[] = [];
     const years = ['1990', '1995', '2000', '2005', '2010', '2015', '2020', '2024'];
     
     // Crescimento gradual com acelerações
@@ -125,8 +125,8 @@ const EpistemicDataAnalysis = () => {
   }
   
   // Simular usando nosso modelo
-  function simulateWithModel(realData, params) {
-    const simulated = [];
+  function simulateWithModel(realData: any[], params: any) {
+    const simulated: any[] = [];
     let rho = realData[0].observed / 100; // Densidade inicial normalizada
     
     realData.forEach((point, i) => {
@@ -157,7 +157,7 @@ const EpistemicDataAnalysis = () => {
   }
   
   // Calcular métricas de validação
-  function calculateMetrics(data) {
+  function calculateMetrics(data: any[]) {
     const n = data.length;
     
     // RMSE (Root Mean Square Error)
@@ -198,7 +198,7 @@ const EpistemicDataAnalysis = () => {
   
   // Atualizar simulação quando caso muda
   useEffect(() => {
-    const caseData = caseStudies[selectedCase];
+    const caseData = caseStudies[selectedCase as keyof typeof caseStudies];
     const simData = simulateWithModel(caseData.realData, caseData.params);
     setSimulatedData(simData);
     setMetrics(calculateMetrics(simData));
